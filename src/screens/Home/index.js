@@ -16,6 +16,7 @@ import Navbar from "~/../../src/components/Navbar";
 import Standort from "../../components/Standort";
 import { colour } from "../../components/theme";
 import UberSection from "../../components/UberSection";
+import { StatusBar } from 'expo-status-bar';
 const height = Dimensions.get("window").height;
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <Standort />
         <Footer />
       </ScrollView>
+      <StatusBar style="light" backgroundColor="#000"/>
     </SafeAreaView>
   );
 }
@@ -37,6 +39,7 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop:40,
     backgroundColor: colour.solidBlack,
   },
 });
